@@ -44,7 +44,7 @@ Sieve of Eratosthenes helps us fill that isprime[]  array with information.
 
 */
 
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 #define ll long long
 
