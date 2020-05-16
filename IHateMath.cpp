@@ -9,6 +9,21 @@ Basically iterate from 1 to sqrt(n).
 If a number i between 1 and sqrt(n) divides n, then we have two factors i and n/i. 
 The first one i.e i, is less than sqrt(n) and second one i.e, n/i is more than sqrt(n).
 In this way we get all factors in sqrt(n) time. 
+
+*Pseudocode below*
+int allfactorsarray[]; 
+for(int i=1;i<=sqrt(n);i++)
+{
+    if(i%n==0)
+    {
+        factor_1 = i;
+        factor_2 = n/i;
+    }
+    //now just add factor_1 and factor_2 to allfactorsarray[] 
+}
+So we get all factors of a number in O(sqrt(n)) time this way.
+
+
 Example:
 n = 60.
 sqrt(60) = 7.
