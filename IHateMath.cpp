@@ -4,7 +4,7 @@ Task 1 --> Find all factors of a number
 Task 2 --> Separate out the prime and composite factors.
 
 How to do task 1 ? 
-If you hate reading editorials you can see how to do task one here : https://www.youtube.com/watch?v=dolcMgiJ7I0
+
 Basically iterate from 1 to sqrt(n).
 If a number i between 1 and sqrt(n) divides n, then we have two factors i and n/i. 
 The first one i.e i, is less than sqrt(n) and second one i.e, n/i is more than sqrt(n).
