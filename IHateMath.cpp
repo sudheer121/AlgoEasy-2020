@@ -40,6 +40,7 @@ Factors are in pairs.
 7 Doesn't divide 60.
 
 Hence we can see we get 12 factors.
+**Precaution** : For a perfect square number the last factor pair will have same factors,take care you don't add same factors twice.
 Task 1 complete
 
 How to do task 2 ?
