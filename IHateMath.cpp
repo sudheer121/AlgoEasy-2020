@@ -43,8 +43,8 @@ Sieve of Eratosthenes helps us fill that isprime[]  array with information.
 
 
 */
-
 #include<iostream>
+#include<math.h> 
 using namespace std;
 #define ll long long
 
@@ -56,10 +56,10 @@ void sieve()//Sieve of Eratosthenes
   for(int i=2;i<maxn;i++){ isprime[i] = 1 ; }
   for(ll i=2;i*i<maxn;i++)
   {
-  	for(ll j=i*i;j<maxn;j+=i)
-  	{
-  	isprime[j] = 0;
-  	}
+      for(ll j=i*i;j<maxn;j+=i)
+      {
+      isprime[j] = 0;
+      }
   }
 }
 void factorize(ll n) // Task 1 done here.
@@ -69,29 +69,22 @@ ll p=0,c=0; //p stores sum of all prime factors, c stores sum of all composite f
 
 if(isprime[n]){ p+=n; }
 else {c+=n;}
-if(n%x==0 && x!=1)
-{ 
-/*
-We need to be cautious, if a number is perfect square then x will be equal to n/x. 
-Hence we are dealing with x in this if block. We will deal with 2 to x-1 in next for loop.
-*/
-if(isprime[x]){ p+=x;}
-else c+=x;
 
-if(n/x != x)
-    {
-    if(isprime[n/x]) {  p+=n/x; }
-    else c+=n/x;
-    }
-}
-for(int i=2;i<x;i++)
+for(int i=2;i<=x;i++)
 {
-if(n%i==0) {
+if(n%i==0)
+{
 if(isprime[i]){ p+=i; } else {c+=i;}
 if(isprime[n/i]){ p+=n/i; } else {c+=n/i;}
 }
 }
- 
+
+if(x*x == n) //removing duplicates if number is perfect square
+{
+if(isprime[x]) { p-=x; }
+else { c-=x; }
+}
+
 cout<<p*c<<endl;
 }
 int main()
