@@ -32,7 +32,7 @@ We need to separate out prime and composite factors.One thing for sure is 1 is n
 We need a fast way to know if a number is prime, the fastest way is using an algorithm called Sieve of Eratosthenes.
 
 
-I can explain this algorithm but I need a youtube channel,till then, below are the resources for the algorithm.
+Below are the resources for the algorithm.
 https://www.youtube.com/watch?v=Xxu95iiVcPI&t=141s
 https://www.geeksforgeeks.org/sieve-of-eratosthenes/
 https://www.youtube.com/watch?v=eKp56OLhoQs
