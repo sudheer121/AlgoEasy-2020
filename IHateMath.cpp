@@ -47,6 +47,8 @@ How to do task 2 ?
 We need to separate out prime and composite factors.One thing for sure is 1 is neither prime nor composite,so discard 1.
 We need a fast way to know if a number is prime, the fastest way is using an algorithm called Sieve of Eratosthenes.
 
+Remember, the problem can also be solved without this algorithm, this is because the test cases contained only one number as input, if I asked answer for multiple numbers in single input, then other approaches can fail. Test cases were made easy considering the level of all participants.Using this algorithm you can make a boolean array whose index i tells if a number i is prime or not.
+Preprocessing takes NloglogN time and every query can be answered in O(1).
 
 Below are the resources for the algorithm.
 https://www.youtube.com/watch?v=Xxu95iiVcPI&t=141s
